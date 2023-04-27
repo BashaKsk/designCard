@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 #Preview
-![productDesignCard](https://user-images.githubusercontent.com/100817012/234878453-0f3ad49b-845a-465d-b802-c8d33154e2a4.png)
+![image](https://user-images.githubusercontent.com/100817012/234878829-0327ca57-8802-4050-b522-8f6142a8eec3.png)
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
