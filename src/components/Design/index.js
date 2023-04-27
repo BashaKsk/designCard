@@ -2,15 +2,15 @@ import { Paper, Typography, Box, Button } from "@mui/material";
 import React, { useState } from "react";
 import Popper from "@mui/material/Popper";
 const DesignCard = ({ image }) => {
-  const date = new Date(); // Assuming the date is in YYYY-MM-DD format
+  const date = new Date();
   const options = { month: "short", day: "numeric", year: "numeric" };
   const formattedDate = date.toLocaleDateString("en-US", options);
-  const [isCopied, setIsCopied] = useState(false);
-  const copyToClipboard = () => {
+  const [isCopiedTrackingid, setIsCopiedTracingId] = useState(false);
+  const copyTrackingIdToClipboard = () => {
     const textToCopy = document.getElementById("trackingID").textContent;
     navigator.clipboard.writeText(textToCopy);
-    setIsCopied(true);
-    setTimeout(() => setIsCopied(false), 1000);
+    setIsCopiedTracingId(true);
+    setTimeout(() => setIsCopiedTracingId(false), 1000);
   };
   return (
     <>
@@ -70,16 +70,16 @@ const DesignCard = ({ image }) => {
             variant="contained"
             color="primary"
             style={{ width: "100%", textTransform: "none" }}
-            onClick={copyToClipboard}
+            onClick={copyTrackingIdToClipboard}
           >
             <Typography variant="h6">Copy Tracking #</Typography>
           </Button>
           <Popper
             sx={{
-               ml:"45%",
-               mt : 10
+              ml: "45%",
+              mt: 10,
             }}
-            open={isCopied}
+            open={isCopiedTrackingid}
           >
             Tracking ID is Copied!
           </Popper>
