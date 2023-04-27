@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Box sx={{ mt: 4 }}>
-        <DesignCard image={poductImage} />
+        <DesignCard poductImage={poductImage} />
       </Box>
     </div>
   );

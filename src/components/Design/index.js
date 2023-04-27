@@ -1,7 +1,7 @@
 import { Paper, Typography, Box, Button } from "@mui/material";
 import React, { useState } from "react";
 import Popper from "@mui/material/Popper";
-const DesignCard = ({ image }) => {
+const DesignCard = ({ poductImage }) => {
   const date = new Date();
   const options = { month: "short", day: "numeric", year: "numeric" };
   const formattedDate = date.toLocaleDateString("en-US", options);
@@ -26,7 +26,7 @@ const DesignCard = ({ image }) => {
         }}
       >
         <img
-          src={image}
+          src={poductImage}
           height={"120px"}
           width={"100%"}
           style={{
